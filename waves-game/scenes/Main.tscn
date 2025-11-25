@@ -1,6 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://d2mupqiwpqi3g"]
+[gd_scene load_steps=3 format=3 uid="uid://d2mupqiwpqi3g"]
 
 [ext_resource type="Script" uid="uid://cnt52bo07kwyf" path="res://scripts/main.gd" id="1_elqb8"]
 
+[sub_resource type="Environment" id="Environment_elqb8"]
+glow_enabled = true
+glow_intensity = 2.33
+
 [node name="Main" type="Node2D"]
 script = ExtResource("1_elqb8")
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_elqb8")
