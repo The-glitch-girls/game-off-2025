@@ -1,6 +1,19 @@
-[gd_scene load_steps=2 format=3 uid="uid://dontvx011bxug"]
+[gd_scene load_steps=5 format=3 uid="uid://dontvx011bxug"]
 
 [ext_resource type="Script" uid="uid://dwo7a18bepw8d" path="res://scripts/point.gd" id="1_jlaq0"]
+[ext_resource type="Shader" uid="uid://dgc8eo3c2irys" path="res://shaders/circle_glow.gdshader" id="2_fgtah"]
+[ext_resource type="Texture2D" uid="uid://dbeyg7ifai06" path="res://icon.svg" id="3_c6jnk"]
 
-[node name="StartPoint" type="Node2D"]
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_c6jnk"]
+shader = ExtResource("2_fgtah")
+shader_parameter/color = Color(1, 1, 1, 1)
+shader_parameter/glow_strength = 0.4
+shader_parameter/glow_size = 0.15
+
+[node name="Point" type="Node2D"]
 script = ExtResource("1_jlaq0")
+
+[node name="Circle" type="Sprite2D" parent="."]
+material = SubResource("ShaderMaterial_c6jnk")
+scale = Vector2(0.3, 0.301)
+texture = ExtResource("3_c6jnk")
