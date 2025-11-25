@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://xcy3626amlnx"]
 
-[ext_resource type="Script" uid="uid://dm2a0np3d1cbg" path="res://scripts/target_point.gd" id="1_gxaat"]
+[ext_resource type="Script" uid="uid://dm2a0np3d1cbg" path="res://scripts/wave.gd" id="1_gxaat"]
 
 [node name="TargetPoint" type="Node2D"]
 script = ExtResource("1_gxaat")
