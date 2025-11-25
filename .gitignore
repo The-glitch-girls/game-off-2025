@@ -1,0 +1,22 @@
+# Godot 4+ specific ignores
+.godot/
+/android/
+*.import
+export_presets.cfg
+
+# Build artifacts
+*.exe
+*.zip
+*.pck
+*.apk
+*.ipa
+*.wasm
+
+# IDE specific files (optional)
+.vscode/
+.idea/
+
+# Other temporary or system files
+.DS_Store
+Thumbs.db
+
